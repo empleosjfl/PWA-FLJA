@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width,
+      initial-scale=1.0">
+    <title>Control IoT</title>
+    <script
+      src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+    <script src="js/init.js">
+    </script>
+    <script src="sw.js"></script>
+    <link rel="shortcut icon" href="icon.png" />
+    <link rel="manifest" href="manifest.json">
+    <link href="css/estilos.css"
+      rel="stylesheet">
+      <link rel="stylesheet" href="./css/menu.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="css/index.css">
+    <script type="module"
+      src="cmp/mi-footer.js">
+      </script>
+  </head>
+  <body>
+    <header class="header">
+      <span class="material-icons">
+        <div class="logo">
+          <a href="index.html">
+            <img src="icon.png" alt="Logo" width="50px" height="50px">
+          </a>
+        </div>  
+      </span>
+      <h1>Control IoT</h1>
+    </header>
+    <div class="contenido">
+      <p>
+        <label>
+          <p class="titleDevice">Nombre del dispositivo</p>
+          <output
+            id="ctDispositivo">
+          </output>
+        </label>
+      </p>
+      <p>
+        <label>
+          Entrada
+          <meter id="ctEntrada"
+            min="0" max="10">
+          </meter>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input id="ctSalida"
+          type="checkbox">
+            <span class="material-icons" id="icon2" >
+              
+              
+                edgesensor_low
+
+
+              </span>
+         
+          
+          Salida
+        </label>
+      </p>
+      
+      
+    </div><br><br><br><br><br><br><br>
+    <mi-menu class="menu"></mi-menu>
+    <script type="module"
+      src="js/CtrlMovil.js">
+      </script>
+    <script type="module" src="./cmp/mi-menu.js"></script>
+    <script type="module" src="./cmp/buttonPower.js"></script>
+    
+  </body>
+</html>

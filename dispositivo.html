@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width,
+      initial-scale=1.0">
+      <link rel="stylesheet" href="css/index.css">
+      <link rel="stylesheet" href="./css/menu.css">
+     <link rel="stylesheet" href="css/dispositivo.css">
+     <link rel="shortcut icon" href="icon.png" />
+     <link href="css/estilos.css"
+      rel="stylesheet">
+      
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>
+      Simulación de Dispositivo
+      IoT
+    </title>
+    <link href="css/estilos.css"
+      rel="stylesheet">
+    <script type="module"
+      src="cmp/mi-footer.js">
+      </script>
+  </head>
+  <body>
+    <header class="header">
+      <span class="material-icons">
+        devices
+        </span>
+      <h1>Simulación de Dispositivo IoT</h1>
+    </header>
+    <div class="contenido">
+      <p>
+        <a href="index.html"
+          target="_blank">
+          Ver móvil.</a>
+      </p>
+      <p>
+        <label>
+         <p class="titleDevice">Nombre dispositivo</p>
+          <output
+            id="ctDispositivo">
+          </output>
+        </label>
+      </p>
+      <p class="input">
+        <label>
+          Entrada
+          <input id="ctEntrada"
+            type="range"
+            min="0" max="10">
+        </label>
+      </p>
+      <p >
+        <label>
+          <input id="ctSondea"
+            type="checkbox"
+            checked>
+            <span class="material-icons" id="icon2">
+              toggle_off
+              </span>
+          Sondea Salida
+        </label>
+      </p>
+      <p>
+        <label>
+          Salida
+          <output id="ctSalida">
+          </output>
+        </label>
+      </p>
+      <p>
+        <output id="iotError">
+        </output>
+      </p>
+     
+    </div><br>
+    <mi-menu class="menu"></mi-menu>
+    
+    <script type="module"
+      src="disp/CtrlDispositivo.js">
+      </script>
+      <script type="module" src="./cmp/mi-menu.js"></script>
+      <script src="cmp/buttonPower2.js"></script>
+  </body>
+</html>
